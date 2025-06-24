@@ -1,0 +1,77 @@
+/* Global Modern Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f8fb;
+  color: #222;
+}
+
+main {
+  min-height: 80vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #0056b3;
+}
+
+/* Layered background for Home */
+.home-hero-bg {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  overflow: hidden;
+}
+.home-hero-bg::before, .home-hero-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+  z-index: 0;
+}
+.home-hero-bg::before {
+  width: 600px;
+  height: 600px;
+  left: -200px;
+  top: -200px;
+  background: radial-gradient(circle, #21bf73 0%, transparent 70%);
+}
+.home-hero-bg::after {
+  width: 400px;
+  height: 400px;
+  right: -100px;
+  bottom: -100px;
+  background: radial-gradient(circle, #007bff 0%, transparent 70%);
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  margin-top: 3rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
+}
+.footer a {
+  color: #21bf73;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+.footer a:hover {
+  color: #fff;
+}

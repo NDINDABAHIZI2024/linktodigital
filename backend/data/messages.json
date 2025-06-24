@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "message": "Hi, I am interested in your services."
+  },
+  {
+    "name": "John Smith",
+    "email": "john@example.com",
+    "message": "Can you provide more details about wedding planning?"
+  },
+  {
+    "name": "Alice",
+    "email": "alice@example.com",
+    "telephone": "987654321",
+    "message": "Hello from PowerShell test!",
+    "receivedAt": "2025-06-24T07:56:23.812Z"
+  },
+  {
+    "name": "test",
+    "email": "test@gmail.com",
+    "telephone": "+250784630147",
+    "message": "vb",
+    "receivedAt": "2025-06-24T08:42:52.158Z"
+  }
+]
