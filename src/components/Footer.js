@@ -9,7 +9,7 @@ const Footer = () => (
       <a href="/contact"> Contact</a>
     </div>
     <div style={{marginTop: '0.5rem', fontSize: '0.95rem', opacity: 0.7}}>
-      Crafted with <span style={{color: '#21bf73', fontWeight: 'bold'}}>passion</span> &amp; <span style={{color: '#007bff', fontWeight: 'bold'}}>creativity</span>.
+      NDINDABAHIZI Claude <span style={{color: '#21bf73', fontWeight: 'bold'}}>passion</span> &amp; <span style={{color: '#007bff', fontWeight: 'bold'}}>Ruhorimbere Dieuddonne</span>.
     </div>
   </footer>
 );

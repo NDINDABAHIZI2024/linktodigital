@@ -1,62 +1,56 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// src/pages/AdminLogin.js
 
-const AdminLogin = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const navigate = useNavigate();
+import React, { useState } from 'react';
 
-  const handleLogin = async (e) => {
+function AdminLogin() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleLogin = (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:5000/api/admin/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password }),
-      });
 
-      if (!response.ok) {
-        throw new Error("Login failed");
-      }
-
-      const data = await response.json();
-      localStorage.setItem("token", data.token);
-      navigate("/admin/messages");
-    } catch (err) {
-      setError("Network error: " + err.message);
+    // Simple mock authentication check
+    if (username === 'admin' && password === 'admin123') {
+      setMessage('✅ Login successful!');
+      // You can add redirect here if you want, e.g.:
+      // navigate('/dashboard');
+    } else {
+      setMessage('❌ Invalid credentials.');
     }
   };
 
   return (
-    <div style={{ maxWidth: "400px", margin: "0 auto", paddingTop: "2rem" }}>
-      <h2>Admin Login</h2>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+    <div style={{ maxWidth: '400px', margin: '40px auto', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', fontFamily: 'Arial, sans-serif' }}>
+      <h2 style={{ textAlign: 'center' }}>Admin Login</h2>
       <form onSubmit={handleLogin}>
-        <div>
-          <label>Username:</label>
+        <div style={{ marginBottom: '12px' }}>
           <input
             type="text"
+            placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            style={{ width: '100%', padding: '10px', fontSize: '16px' }}
             required
           />
         </div>
-        <div style={{ marginTop: "1rem" }}>
-          <label>Password:</label>
+        <div style={{ marginBottom: '12px' }}>
           <input
             type="password"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            style={{ width: '100%', padding: '10px', fontSize: '16px' }}
             required
           />
         </div>
-        <button type="submit" style={{ marginTop: "1rem" }}>
+        <button type="submit" style={{ width: '100%', padding: '12px', fontSize: '16px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '4px' }}>
           Login
         </button>
       </form>
+      {message && <p style={{ marginTop: '20px', textAlign: 'center' }}>{message}</p>}
     </div>
   );
-};
+}
 
 export default AdminLogin;

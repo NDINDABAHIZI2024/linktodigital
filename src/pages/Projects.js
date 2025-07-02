@@ -85,7 +85,7 @@ const Projects = () => {
   return (
     <div style={containerStyle}>
       <h2 style={titleStyle}>
-        My <span style={{ color: "#21bf73" }}>Projects</span>
+        Our <span style={{ color: "#21bf73" }}>Projects</span>
       </h2>
       <div style={gridStyle}>
         {projectLinks.map((proj, idx) => (

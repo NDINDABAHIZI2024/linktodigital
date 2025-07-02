@@ -78,7 +78,7 @@ const StaffSection = () => (
         marginBottom: "2rem",
       }}
     >
-      Our Staff
+     Meets Our Team
     </h2>
     <div
       style={{
