@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.677e6aaf.css",
-    "main.js": "/static/js/main.da47d96c.js",
+    "main.js": "/static/js/main.b7ebfdcf.js",
     "static/media/school-management.jpg": "/static/media/school-management.a24d894c20f784fae0c2.jpg",
     "static/media/blogging-platform.jpg": "/static/media/blogging-platform.55c6ca1fe76e4995a4af.jpg",
     "static/media/startup-website.jpg": "/static/media/startup-website.55c6ca1fe76e4995a4af.jpg",
     "static/media/stock-management.jpg": "/static/media/stock-management.f9d5d3335d80b83ba4ae.jpg",
     "index.html": "/index.html",
     "main.677e6aaf.css.map": "/static/css/main.677e6aaf.css.map",
-    "main.da47d96c.js.map": "/static/js/main.da47d96c.js.map"
+    "main.b7ebfdcf.js.map": "/static/js/main.b7ebfdcf.js.map"
   },
   "entrypoints": [
     "static/css/main.677e6aaf.css",
-    "static/js/main.da47d96c.js"
+    "static/js/main.b7ebfdcf.js"
   ]
 }
