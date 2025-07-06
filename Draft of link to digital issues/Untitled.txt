@@ -1,0 +1,36 @@
+
+Home page
+---> testimonies
+--->footer to be corrected, links to be removed, add contact icons (Contact), direct top, 
+---> 
+
+About us page(refer to Light Center)
+
+
+Services(refer to Light Center)
+--> Our Services
+Port|✔️ Website Development  and it's maintenance
+✔️ School Management Systems
+✔️ Blogging Platforms
+✔️ Stock Management Systems
+✔️ Portfolio & Personal Branding Websites
+✔️IT Support & Consulting
+ Get expert advice and technical support to keep your systems running     smoothly.
+
+✔️smart, automated reporting systems using Google Sheets and Apps Script
+
+-->Automatically collect and organize data
+
+-->Generate daily, weekly, or monthly reports
+
+-->Send reports via email or export them as PDFs
+
+-->Connect with forms, APIs, and external system
+
+
+Notes:
+
+
+
+
+Our Services

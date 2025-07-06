@@ -223,4 +223,118 @@
   .contact-container h2 {
     font-size: 1.3rem;
   }
+  .footer {
+  background-color: #282c34;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-logo span:nth-child(1) {
+  color: #61dafb;
+}
+.footer-logo span:nth-child(2) {
+  color: white;
+}
+.footer-logo span:nth-child(3) {
+  color: #21bf73;
+}
+
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-link {
+  display: block;
+  color: #61dafb;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #21bf73;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+.footer-icon {
+  background-color: #21bf73;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-icon:hover {
+  background-color: #61dafb;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer-bottom span {
+  color: #61dafb;
+  font-weight: bold;
+}
+/* src/App.css */
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #222;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Example tweaks (optional) */
+a {
+  color: #007bff;
+}
+
+body.dark-mode a {
+  color: #61dafb;
+}
+
 }
